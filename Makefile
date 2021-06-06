@@ -1,8 +1,11 @@
 build:
 	docker-compose build
 
-up:
+upFront:
 	docker-compose up -d
+
+upDjango:
+	docker-compose run web django-admin.py startproject playlist .
 
 stop:
 	docker-compose down
