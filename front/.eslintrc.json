@@ -24,6 +24,7 @@
     "prettier"
   ],
 	"rules": {
-    "no-extra-semi": "warn"
+    "react/react-in-jsx-scope": "off",
+    "no-extra-semi": "error"
   }
 }
