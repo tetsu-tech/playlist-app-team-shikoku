@@ -4,6 +4,7 @@ ENV PYTHONUNBUFFERED 1
 
 RUN mkdir /backend
 
+# /backend/プロジェクト名
 WORKDIR /backend
 
 ADD /backend/requirements.txt /backend/
