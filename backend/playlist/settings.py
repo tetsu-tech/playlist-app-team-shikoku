@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-# mysqlをimport
-import pymysql
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2j8r6_vt^07^7q&t3!_gv$*ojwno!n%uzozyp45jnrc=13_cx6'
+SECRET_KEY = '&1p)db_pfmnee%o&$uhrr7rj5vn9-m436-9!*q0*nh@5urkd-l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,16 +73,10 @@ WSGI_APPLICATION = 'playlist.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# mysqlを使用するように変更
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django-db',
-        'USER': 'django',
-        'PASSWORD': 'django',
-        'HOST': '',
-        'PORT': '3306',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
