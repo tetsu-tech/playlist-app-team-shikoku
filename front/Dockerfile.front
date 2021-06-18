@@ -3,3 +3,5 @@ FROM node:14.5.0-alpine
 COPY . .
 
 WORKDIR /front/src
+
+RUN yarn install
