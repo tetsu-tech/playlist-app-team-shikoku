@@ -28,11 +28,6 @@ const VideCard: React.FC = () => {
 		},
 	];
 
-	const test = {
-		title: 'ss',
-		src: 'fnal',
-	};
-
 	return (
 		<div className={classes.cards}>
 			{tests.map((test) => (
