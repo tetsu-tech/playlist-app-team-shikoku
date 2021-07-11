@@ -24,3 +24,4 @@ yarn-error.log*
 
 ## pycache
 __pycache__
+mysql
